@@ -12,5 +12,6 @@ find_library(HTMLCXX_LIBRARY
   HINTS "${LIBRARY_LOCATION}")
 
 add_executable(4anime-scraper main.cpp)
+
 target_link_libraries(4anime-scraper PRIVATE "${CPR_LIBRARY}")
 target_link_libraries(4anime-scraper PRIVATE "${HTMLCXX_LIBRARY}")
